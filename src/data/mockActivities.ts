@@ -1,0 +1,57 @@
+import { TimelineActivity } from '@/types';
+
+export const mockActivities: TimelineActivity[] = [
+  {
+    id: 'act-01',
+    time: '10:50 AM',
+    title: 'Suspicious head movement',
+    description: 'Student 08 yaw angle turned 48° towards adjacent desk for 8 seconds.',
+    severity: 'MEDIUM',
+    student: 'Student 08 (Ananya Sen)',
+    type: 'HEAD_MOVEMENT',
+  },
+  {
+    id: 'act-02',
+    time: '10:45 AM',
+    title: 'Mobile phone detected',
+    description: 'Object detected in left palm with 93% AI confidence. Buzzer queued.',
+    severity: 'HIGH',
+    student: 'Student 15 (Priya Nair)',
+    type: 'PHONE_DETECTED',
+  },
+  {
+    id: 'act-03',
+    time: '10:42 AM',
+    title: 'Mobile phone detected',
+    description: 'YOLOv8 detected handheld smartphone on Student 12 (Desk 12).',
+    severity: 'CRITICAL',
+    student: 'Student 12 (Aarav Sharma)',
+    type: 'PHONE_DETECTED',
+  },
+  {
+    id: 'act-04',
+    time: '10:30 AM',
+    title: 'Student 12 detected',
+    description: 'Repetitive downward gaze peeking below desk level identified by MediaPipe gaze tracker.',
+    severity: 'HIGH',
+    student: 'Student 12 (Aarav Sharma)',
+    type: 'PEEKING_DETECTED',
+  },
+  {
+    id: 'act-05',
+    time: '10:18 AM',
+    title: 'Unauthorized material flagged',
+    description: 'Miniature paper chit identified on Desk 34 during rear camera sweep.',
+    severity: 'HIGH',
+    student: 'Student 34 (Rohan Verma)',
+    type: 'MATERIAL_DETECTED',
+  },
+  {
+    id: 'act-06',
+    time: '10:00 AM',
+    title: 'Examination Commenced',
+    description: 'DSGT Internal Examination initialized. 3 AI vision streams active.',
+    severity: 'INFO',
+    type: 'SYSTEM',
+  },
+];
